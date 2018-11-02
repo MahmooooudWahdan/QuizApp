@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="Question_one">when do we cultivate watermelon in Egypt ?</string>
+    <string name="Question_two">When do we harvest Watermelon in Egypt ?</string>
+    <string name="Question_three">which country leads the race in producing most of the watermelons in the world?</string>
+    <string name="Question_four">How many tons of waterelon does Egypt produce annually ? </string>
+    <string name="Question_five">What is the most appropriate soil type ?</string>
+    <string name="Question_six">What is the most appropriate soil pH ?</string>
+    <string name="Question_seven">When do they grow the best ?</string>
+    <string name="question_eight">Check the ones that are from the top 5 countries in production</string>
+    <string name="question_nine">What is the third country in producing watermelons ?</string>
+
+
+    <string name="right">Right</string>
+
+    <string name="result">Get Result</string>
+    <string name="wrong_answer">Better Luck Next time</string>
+    <string name="Right_Answer">Awesome Work </string>
+    <string name="Name">Name</string>
+
+    <string name="enter_your_name">Please Enter your Name</string>
+    <string name="question_answer">Please answer the question</string>
+
+    <string name="nice_work">Nice Work</string>
+
+    <string name="wrong">Wrong</string>
+
+    <!--question one answers -->
+    <string name="summer">summer</string>
+    <string name="winter">Winter</string>
+    <string name="autumn">Autumn</string>
+    <string name="spring">Spring</string>
+
+    <!--question two answers -->
+    <!--Right answer is china -->
+    <string name="Egypt">Egypt</string>
+
+    <!--question four answers -->
+    <string name="million_and_89_rightAnswer">1.89 million</string>
+    <string name="two_milion_16">2.16 million</string>
+    <string name="million">Million</string>
+    <string name="three_million">3 Million</string>
+
+    <!--question five answers-->
+    <string name="sandy_right_answer">Sandy Soil</string>
+    <string name="clay">Clay soil</string>
+    <string name="Loam">Loam soil</string>
+    <string name="sil">Silt soil</string>
+    
+    <!--question six answer-->
+    <string name="soil_ph_right_answer">Between 6 and 6.8</string>
+    <string name="between_seven_eight">Between Seven and Eight</string>
+    <string name="between_six_five">Between Five and six</string>
+    <string name="between_eight_nin">Between Eight and Nine</string>
+
+    <!--question seven answer-->
+    <string name="grow_best_right">when daytime temperatures fall between 70 and 80 degrees Fahrenheit, and nighttime temperatures fall between 65 and 70 degrees Fahrenheit</string>
+    <string name="grow1">when daytime temperatures fall between 60 and 70 degrees Fahrenheit, and nighttime temperatures fall between 65 and 70 degrees Fahrenheit</string>
+    <string name="grow2">when daytime temperatures fall between 70 and 80 degrees Fahrenheit, and nighttime temperatures fall between 40 and 50 degrees Fahrenheit</string>
+    <string name="grow3">when daytime temperatures fall between 80 and 90 degrees Fahrenheit, and nighttime temperatures fall between 65 and 70 degrees Fahrenheit</string>
+    <!--question eight answer -->
+    <string name="china">China</string>
+    <string name="Iran">Iran</string>
+    <string name="Singapore">Singapore</string>
+
+
+    <string name="submit">Submit</string>
+    <string name="congrats">Congrats you got</string>
+    <string name="more_than_four">WOHOOOOO !! You are Awesome , you got %1$d </string>
+    <string name="Less_than_four">Better Luck Next time , you got %1$d </string>
+
+    <string name="awesome">You are Awesome</string>
+    <string name="better_luck">Better Luck Next Time</string>
+
+    <string name="Answer">Answer Here </string>
+
+
+</resources>

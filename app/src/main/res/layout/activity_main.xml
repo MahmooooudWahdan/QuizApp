@@ -1,0 +1,668 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/Name"
+            android:inputType="textCapWords" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--first question  -->
+            <TextView
+                android:id="@+id/firstQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_one"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/right_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!--first Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/firstRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/summer"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/right_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/winter"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/autumn"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spring"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:id="@+id/submit1"
+            android:onClick="submit1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--seconed question  -->
+            <TextView
+                android:id="@+id/seconedQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_two"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/right2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--seconed Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/seconedRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/right_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/summer"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autumn"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spring"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/winter"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:id="@+id/submit2"
+            android:onClick="submit2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Third question  -->
+            <TextView
+                android:id="@+id/thirdQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_three"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:id="@+id/right3"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--third Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/thirdRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Egypt"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/china"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/right_answer3"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Singapore"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Iran"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:id="@+id/submit3"
+            android:onClick="submit3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--fourth question  -->
+            <TextView
+                android:id="@+id/fourthQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_four"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:id="@+id/right4"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--Fourth Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/fourthRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/million"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two_milion_16"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/million_and_89_rightAnswer"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/right_answer4"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_million"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:onClick="submit4"
+            android:id="@+id/submit4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--fifth question  -->
+            <TextView
+                android:id="@+id/fifthQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_five"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:id="@+id/right5"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--Fifth Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/fifthRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clay"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sil"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Loam"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sandy_right_answer"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/right_answer5"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:onClick="submit5"
+            android:id="@+id/submit5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--sixth question  -->
+            <TextView
+                android:id="@+id/sixthQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_six"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:id="@+id/right6"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--Sixth Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/sixthRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soil_ph_right_answer"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/right_answer6"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/between_eight_nin"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/between_seven_eight"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/between_six_five"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:onClick="submit6"
+            android:id="@+id/submit6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Seventh question  -->
+            <TextView
+                android:id="@+id/seventhQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Question_seven"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:id="@+id/right7"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--Seventh Radio Group which contains first question Answers -->
+        <RadioGroup
+            android:id="@+id/seventhRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grow1"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_marginTop="12dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grow2"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_marginTop="12dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grow_best_right"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/right_answer7"
+                android:layout_marginTop="12dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grow3"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_marginTop="12dp"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:id="@+id/submit7"
+            android:onClick="submit7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Eighth  question  -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--Seventh Radio Group which contains first question Answers -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--ninth question  -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--eighth question  -->
+
+                <TextView
+                    android:id="@+id/eighthQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/question_eight"
+                    android:padding="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/right8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/right"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eight"
+                android:text="@string/china"
+                android:id="@+id/checkbox1"
+                android:padding="8dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox1"
+                android:text="@string/Egypt"
+                android:id="@+id/checkbox2"
+                android:padding="8dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox2"
+                android:text="@string/Iran"
+                android:id="@+id/checkbox3"
+                android:padding="8dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox3"
+                android:text="@string/Singapore"
+                android:id="@+id/checkbox4"
+                android:padding="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/submit"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:layout_below="@id/checkbox4"
+                android:onClick="submit_check_box"
+                android:id="@+id/submit8"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Ninth Question-->
+        <LinearLayout
+            android:id="@+id/nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--ninth question  -->
+
+            <TextView
+                android:id="@+id/ninthQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/question_nine"
+                android:padding="8dp"/>
+
+
+            <TextView
+                android:id="@+id/right9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textAllCaps="true"  
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nine"
+                android:hint="@string/Answer"
+                android:id="@+id/ninth_answer"
+                android:padding="12dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/submit"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:onClick="submit_text_question"
+                android:id="@+id/submit9"
+                android:layout_below="@+id/ninth_answer"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nice_work"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:id="@+id/resultMessage"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="getResult"
+            android:text="@string/result"
+            android:id="@+id/result_button"/>
+    </LinearLayout>
+</ScrollView>
